@@ -1,8 +1,10 @@
 # shedaCodeTest
+
 ## Technologies used:
--- HTML5
--- CSS
--- Bootstrap 4
--- Pandas and Matplotlib for Data Visualisation 
+- HTML5
+- CSS
+- Bootstrap 4
+- Python 2.7 along with Pandas and Matplotlib for Data Visualisation 
+
 ## Data Visualisation
--- used automobile dataset from the UCI repository
+- used automobile dataset from the UCI repository
