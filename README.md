@@ -8,3 +8,6 @@
 
 ## Data Visualisation
 - used automobile dataset from the UCI repository
+- **Libraries to install to run the code:** 
+  - Pandas
+  - Matplotlib (for the graphs)
