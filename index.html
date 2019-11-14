@@ -9,8 +9,12 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-route.min.js"></script>
+  <script src="config.js"></script>
 </head>
-<body>
+
+<body ng-app='myApp'>
 
 <!-- Navbar -->
 <nav class="navbar navbar-default">
@@ -21,60 +25,24 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="index.html">Australian Education Research</a>
+      <a class="navbar-brand" href="#/">Australian Education Research</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="faq.html">FAQs</a></li>
-        <li><a href="register.html">Register</a></li>
+        <li><a href="#!about">About</a></li>
+        <li><a href="#!contact">Contact Us</a></li>
+        <li><a href="#!faq">FAQs</a></li>
+        <li><a href="#!register">Register</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<!-- First Container -->
-<div class="container-fluid bg-1 text-center">
-  <h3 class="margin">Know More About Us</h3>
-  <img src="banner.jpg" style="display:inline" alt="Keyboard" width="1200" height="800">
-  <h4>Changing the way you Learn!</h4>
-</div>
-
-<!-- Second Container -->
-<div class="container-fluid bg-2 text-center">
-  <h3 class="margin">Education in Australia</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-  <a href="#" class="btn btn-default btn-lg">
-    <span class="glyphicon glyphicon-search"></span> Search
-  </a>
-</div>
-
-<!-- Third Container (Grid) -->
-<div class="container-fluid bg-3 text-center">    
-  <h2 class="margin">Information for Students</h2><br>
-  <div class="row">
-    <div class="col-sm-4">
-    <h3>International Students</h3><br>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="website4.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-4">
-    <h3>Local Students</h3><br>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="website2.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-4"> 
-    <h3>Local Students</h3><br>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="website3.jpg" class="img-responsive margin" style="width:100%" alt="Image">
-    </div>
-  </div>
-</div>
+<div ng-view></div>
 
 <!-- Footer -->
 <footer class="container-fluid bg-4 text-center">
-  <p>Theme created using Bootstrap4, HTML5 and CSS </p> 
+    <p>Theme By <a>Deepika Gill</a></p> 
 </footer>
 
 </body>

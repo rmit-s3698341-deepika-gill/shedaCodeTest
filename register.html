@@ -11,33 +11,12 @@
 </head>
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-default">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="index.html">Australian Education Research</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="faq.html">FAQs</a></li>
-        <li><a href="register.html">Register</a></li>
-      </ul>
-    </div>
+  <!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+    <h3 class="margin">Register</h3>
+    <img src="banner1.jpg" style="display:inline" alt="Keyboard" width="1200" height="300">
   </div>
-</nav>
 
-<!-- First Container -->
-<!DOCTYPE html>
-<html>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 <style>
 * {
   box-sizing: border-box;
@@ -48,7 +27,7 @@ body {
 #regForm {
   background-color: #ffffff;
   margin: 0px auto;
-  font-family: sans-serif;
+  font-family: Montserrat, sans-serif;
   padding: 40px;
   width: 40%;
   min-width: 300px;
@@ -61,7 +40,7 @@ input {
   padding: 10px;
   width: 100%;
   font-size: 17px;
-  font-family: sans-serif;
+  font-family: Montserrat, sans-serif;
   border: 1px solid #aaaaaa;
 }
 input.invalid {
@@ -76,7 +55,7 @@ button {
   border: none;
   padding: 10px 20px;
   font-size: 17px;
-  font-family: sans-serif;
+  font-family: Montserrat, sans-serif;
   cursor: pointer;
 }
 button:hover {
@@ -103,10 +82,8 @@ button:hover {
 }
 </style>
 <body>
-<h1 style="text-align:center; font-size:50px; margin-top:40px; color:#fff">Form with Multiple Steps</h1>
 <form id="regForm" action="success.html" method="post">
-  <h1>Register</h1>
-  <div class="tab">Name:
+  <div class="tab">Your Name:
     <p><input placeholder="First name..." oninput="this.className = ''" name="fname"></p>
     <p><input placeholder="Last name..." oninput="this.className = ''" name="lname"></p>
   </div>
@@ -114,7 +91,7 @@ button:hover {
     <p><input placeholder="E-mail..." oninput="this.className = ''" name="email"></p>
     <p><input placeholder="Phone..." oninput="this.className = ''" name="phone"></p>
   </div>
-  <div class="tab">Query:
+  <div class="tab">Date of Birth:
     <p><input placeholder="dd" oninput="this.className = ''" name="dd"></p>
     <p><input placeholder="mm" oninput="this.className = ''" name="nn"></p>
     <p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p>
@@ -192,16 +169,6 @@ function fixStepIndicator(n) {
   x[n].className += " active";
 }
 </script>
-
-</body>
-</html>
-
-
-
-<!-- Footer -->
-<footer class="container-fluid bg-4 text-center">
-  <p>Theme created using Bootstrap4, HTML5 and CSS </p> 
-</footer>
 
 </body>
 </html>
